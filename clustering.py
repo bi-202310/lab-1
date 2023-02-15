@@ -39,3 +39,5 @@ print((df_roads.isna().sum() / df_roads.shape[0]).sort_values(ascending=False))
 print("Repeated registries:\n",
 	df_roads.loc[df_roads.duplicated(subset=df_roads.columns[0:], keep=False)].sum()
 )
+
+print(df_roads["Vehicle_Type"].unique())
